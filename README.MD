@@ -1,4 +1,9 @@
-
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentação da API</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -61,37 +66,37 @@
       O JSON retornado para uma requisição bem-sucedida terá o seguinte formato:
     </p>
     <pre class="note"><code>
-{
+  {
     "2": 3,
     "5": 1,
     "10": 0,
     "20": 0,
     "50": 1,
     "100": 1
-}
+  }
   </code></pre>
 
     <h2>Erros de Requisição</h2>
 
     <h3>Erro 500: Internal Server Error</h3>
     <pre class="note"><code>
-{
+  { 
     "message": "Internal server error"
-}
+  }
   </code></pre>
 
     <h3>Erro 400: Formato Inválido de Entrada</h3>
     <pre class="note"><code>
-{
-    "issues": {
-        "_errors": [],
-        "valor": {
-            "_errors": [
-                "Erro: não identificamos nenhum valor a ser sacado, por favor, informe e tente novamente."
-            ]
-        }
-    }
-}
+  {
+      "issues": {
+          "_errors": [],
+          "valor": {
+              "_errors": [
+                  "Erro: não identificamos nenhum valor a ser sacado, por favor, informe e tente novamente."
+              ]
+          }
+      }
+  }
   </code></pre>
   
 
@@ -101,12 +106,12 @@
       específico:
     </p>
     <pre class="note"><code>
-{
-    "error": {
-        "name": "ErroValorSaque",
-        "message": "Erro: Saque não permitido para o valor informado."
-    }
-}
+  {
+      "error": {
+          "name": "ErroValorSaque",
+          "message": "Erro: Saque não permitido para o valor informado."
+      }
+  }
   </code></pre>
 
     <h2>Descrição</h2>
@@ -125,83 +130,83 @@
     </p>
 
     <pre class="note"><code>
-{
-  "_type": "export",
-  "__export_format": 4,
-  "__export_date": "2024-06-27T20:29:12.466Z",
-  "__export_source": "insomnia.desktop.app:v9.2.0",
-  "resources": [
-    {
-      "_id": "req_47d3b408ad964eb4acc77cff2260f7fe",
-      "parentId": "wrk_da7d1b1186a241bc8be2975c45a40b14",
-      "modified": 1719520023618,
-      "created": 1719517406494,
-      "url": "https://caixaeletronico.onrender.com/caixa",
-      "name": "New Request",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"valor\": 156\n}"
-      },
-      "preRequestScript": "",
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json"
+  {
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-06-27T20:29:12.466Z",
+    "__export_source": "insomnia.desktop.app:v9.2.0",
+    "resources": [
+      {
+        "_id": "req_47d3b408ad964eb4acc77cff2260f7fe",
+        "parentId": "wrk_da7d1b1186a241bc8be2975c45a40b14",
+        "modified": 1719520023618,
+        "created": 1719517406494,
+        "url": "https://caixaeletronico.onrender.com/caixa",
+        "name": "New Request",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n\t\"valor\": 156\n}"
         },
-        {
-          "name": "User-Agent",
-          "value": "insomnia/9.2.0"
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719517406494,
-      "isPrivate": false,
-      "pathParameters": [],
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "wrk_da7d1b1186a241bc8be2975c45a40b14",
-      "parentId": null,
-      "modified": 1719517400828,
-      "created": 1719517400828,
-      "name": "Saque",
-      "description": "",
-      "scope": "collection",
-      "_type": "workspace"
-    },
-    {
-      "_id": "env_c25cfc1dd3f850a0e008f9d0e9bc067e9d5a7e81",
-      "parentId": "wrk_da7d1b1186a241bc8be2975c45a40b14",
-      "modified": 1719517400829,
-      "created": 1719517400829,
-      "name": "Base Environment",
-      "data": {},
-      "dataPropertyOrder": null,
-      "color": null,
-      "isPrivate": false,
-      "metaSortKey": 1719517400829,
-      "_type": "environment"
-    },
-    {
-      "_id": "jar_c25cfc1dd3f850a0e008f9d0e9bc067e9d5a7e81",
-      "parentId": "wrk_da7d1b1186a241bc8be2975c45a40b14",
-      "modified": 1719517400830,
-      "created": 1719517400830,
-      "name": "Default Jar",
-      "cookies": [],
-      "_type": "cookie_jar"
-    }
-  ]
-}
+        "preRequestScript": "",
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "name": "User-Agent",
+            "value": "insomnia/9.2.0"
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1719517406494,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "wrk_da7d1b1186a241bc8be2975c45a40b14",
+        "parentId": null,
+        "modified": 1719517400828,
+        "created": 1719517400828,
+        "name": "Saque",
+        "description": "",
+        "scope": "collection",
+        "_type": "workspace"
+      },
+      {
+        "_id": "env_c25cfc1dd3f850a0e008f9d0e9bc067e9d5a7e81",
+        "parentId": "wrk_da7d1b1186a241bc8be2975c45a40b14",
+        "modified": 1719517400829,
+        "created": 1719517400829,
+        "name": "Base Environment",
+        "data": {},
+        "dataPropertyOrder": null,
+        "color": null,
+        "isPrivate": false,
+        "metaSortKey": 1719517400829,
+        "_type": "environment"
+      },
+      {
+        "_id": "jar_c25cfc1dd3f850a0e008f9d0e9bc067e9d5a7e81",
+        "parentId": "wrk_da7d1b1186a241bc8be2975c45a40b14",
+        "modified": 1719517400830,
+        "created": 1719517400830,
+        "name": "Default Jar",
+        "cookies": [],
+        "_type": "cookie_jar"
+      }
+    ]
+  }
   </code></pre>
 
     <p>
@@ -249,5 +254,6 @@
     
       <h3>Iniciar a Aplicação</h3>
       <pre><code>npm run start</code></pre>
-
+    </body>
+</html>
         
