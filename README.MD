@@ -3,7 +3,7 @@
   <body>
     <h1>Documentação da API</h1>
     <h2>Endpoint local</h2>
-    <pre><code>http://localhost:3333/caixa</code></pre>
+    <pre><code>POST http://localhost:3333/caixa</code></pre>
     <h2>Endpoint implantado e pronto para uso</h2>
     <pre><code>POST https://caixaeletronico.onrender.com/caixa</code></pre>
     <h2>Tipos de Resposta</h2>
