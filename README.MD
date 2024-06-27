@@ -158,27 +158,33 @@
       </p>
       <h2>Desafio e Solução</h2>
       <div class="challenge">
-        <p>
-          Inicialmente, não enfrentei desafios. Após finalizar a lógica de cálculo
-          e testá-la, tudo parecia estar correto. No entanto, ao inserir o valor
-          126, que é um número inteiro e deveria ser facilmente processado por um
-          sistema de saque, descobri um problema na lógica que desenvolvi.
+          <p>
+          Inicialmente, não enfrentei desafios. Após finalizar a lógica de cálculo e
+          testá-la, tudo parecia estar correto. No entanto, ao inserir o valor 126, que
+          é um número inteiro e deveria ser facilmente processado por um sistema de
+          saque, descobri um problema na lógica que desenvolvi.
         </p>
         <p>
-          Originalmente, minha abordagem era iterar de forma decrescente,
-          começando pelas cédulas de maior valor e tentando encaixar o restante
-          nos valores menores até não sobrar nenhum resto. Entretanto, eu sempre
-          recebia um erro quando o resto do valor não era zero, indicando "Erro:
-          Saque não permitido para o valor informado."
+          Originalmente, minha abordagem era iterar de forma decrescente, começando
+          pelas cédulas de maior valor e tentando encaixar o restante nos valores
+          menores até não sobrar nenhum resto. Entretanto, eu sempre recebia um erro
+          quando o resto do valor não era zero, indicando "Erro: Saque não permitido
+          para o valor informado."
         </p>
         <p>
-          Ao revisar os cálculos, percebi que, em vez de utilizar uma cédula de
-          100, uma de 20 e três de 2 para compor 126, o sistema estava retornando
-          uma de 100, uma de 20 e uma de 5, deixando um resto de 1. Para resolver
-          isso, adicionei uma lógica especial para a última iteração: se houvesse
-          um resto, eu ajustava a quantidade de cédulas de 5 somando o resto ao
-          número de cédulas anteriores e subtraindo o valor do saque.
+          Ao revisar os cálculos, percebi que, em vez de utilizar uma cédula de 100, uma
+          de 20 e três de 2 para compor 126, o sistema estava retornando uma de 100, uma
+          de 20 e uma de 5, deixando um resto de 1. Para resolver isso, adicionei uma
+          lógica especial para a última iteração: se houvesse um resto, eu ajustava a
+          quantidade de cédulas de 5 somando o resto ao número de cédulas anteriores e
+          aplicava o cálculo %2 para ajustar as cédulas de 2, garantindo que apenas uma
+          cédula de 5 fosse utilizada quando necessário.
         </p>
+        <p>
+          Essa adaptação resolveu o problema, assegurando que a lógica do sistema se
+          comportasse corretamente mesmo em casos como esse.
+        </p>
+
         </div>
         <h2>Como Utilizar</h2>
         <h3>Instalação</h3>
