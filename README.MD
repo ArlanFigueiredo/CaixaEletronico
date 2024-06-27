@@ -1,45 +1,4 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        padding: 20px;
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      h1,
-      h2 {
-        color: #333;
-      }
-      pre {
-        background-color: #f5f5f5;
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-      code {
-        font-family: Consolas, monospace;
-        font-size: 14px;
-      }
-      .note {
-        background-color: #ffeeba;
-        border: 1px solid #ffc107;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 10px;
-      }
-      .challenge {
-        background-color: #e2f0ff;
-        border: 1px solid #b8daff;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 20px;
-      }
-    </style>
-  </head>
-  <body>
+
     <h1>Documentação da API</h1>
 
     <h2>Endpoint</h2>
@@ -251,6 +210,4 @@
       
         <h3>Iniciar a Aplicação</h3>
         <pre><code>npm run start</code></pre>
-  </body>
-</html>
-        
+
