@@ -1,9 +1,4 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentação da API</title>
+
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -254,6 +249,5 @@
     
       <h3>Iniciar a Aplicação</h3>
       <pre><code>npm run start</code></pre>
-    </body>
-    </html>
+
         
