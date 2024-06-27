@@ -1,9 +1,48 @@
-
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      pre {
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        font-size: 14px;
+      }
+      .note {
+        background-color: #ffeeba;
+        border: 1px solid #ffc107;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .challenge {
+        background-color: #e2f0ff;
+        border: 1px solid #b8daff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Documentação da API</h1>
-
     <h2>Endpoint</h2>
     <pre><code>POST https://caixaeletronico.onrender.com/caixa</code></pre>
-
     <h2>Tipos de Resposta</h2>
     <p>A API retorna os seguintes tipos de resposta:</p>
     <ul>
@@ -16,7 +55,6 @@
         formato inválido de entrada.
       </li>
     </ul>
-
     <h2>Formato JSON Retornado</h2>
     <p>
       O JSON retornado para uma requisição bem-sucedida terá o seguinte formato:
@@ -31,16 +69,13 @@
       "100": 1
     }
     </code></pre>
-
       <h2>Erros de Requisição</h2>
-
       <h3>Erro 500: Internal Server Error</h3>
       <pre class="note"><code>
     { 
       "message": "Internal server error"
     }
     </code></pre>
-
       <h3>Erro 400: Formato Inválido de Entrada</h3>
       <pre class="note"><code>
     {
@@ -54,8 +89,6 @@
         }
     }
     </code></pre>
-    
-
       <h3>Erro 400: Erro de Valor de Saque</h3>
       <p>
         Quando um valor de saque não é permitido pela API, você receberá um erro
@@ -69,22 +102,16 @@
         }
     }
     </code></pre>
-
       <h2>Descrição</h2>
       <p>
         Esta API calcula a quantidade de cédulas necessárias para um saque, com
         base no valor fornecido.
       </p>
-
-      
-
       <h2>Exemplo de Uso no Insomnia</h2>
-
       <p>
         Para facilitar o uso da API, você pode importar o seguinte snippet JSON no
         Insomnia para testar o endpoint diretamente:
       </p>
-
       <pre class="note"><code>
     {
       "_type": "export",
@@ -164,12 +191,10 @@
       ]
     }
     </code></pre>
-
       <p>
         Para mais detalhes sobre como utilizar a API, consulte a documentação
         completa no README.
       </p>
-
       <h2>Desafio e Solução</h2>
       <div class="challenge">
         <p>
@@ -195,19 +220,16 @@
         </p>
         </div>
         <h2>Como Utilizar</h2>
-
         <h3>Instalação</h3>
         <pre><code>npm install</code></pre>
-      
         <h3>Executar Testes (Modo Watch)</h3>
         <pre><code>npm run test:watch</code></pre>
-      
         <h3>Verificar Cobertura de Testes</h3>
         <pre><code>npm run test:coverage</code></pre>
-      
         <h3>Construir o Projeto</h3>
         <pre><code>npm run build</code></pre>
-      
         <h3>Iniciar a Aplicação</h3>
         <pre><code>npm run start</code></pre>
-
+  </body>
+</html>
+        
