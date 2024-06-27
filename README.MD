@@ -184,7 +184,6 @@
           Essa adaptação resolveu o problema, assegurando que a lógica do sistema se
           comportasse corretamente mesmo em casos como esse.
         </p>
-
         </div>
         <h2>Como Utilizar</h2>
         <h3>Instalação</h3>
