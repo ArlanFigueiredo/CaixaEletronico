@@ -8,7 +8,7 @@ export async function SacarCedulas(req: FastifyRequest, res: FastifyReply) {
   var novoSaqueFactory = SaqueFactory();
 
   const createBodySchema = z.object({
-    valor: z.number().int({
+    valor: z.number().min(1).int({
       message:
         "Erro: o valor inserido não é um valor inteiro, por favor, informe um valor inteiro",
     }),
